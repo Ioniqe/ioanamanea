@@ -62,16 +62,10 @@ const Cv = () => (
             {PROFILE.location}
           </p>
           <div className="text-muted-foreground mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm print:mt-0.5 print:justify-start print:gap-x-3 print:text-xs">
-            <a
-              className="hover:text-primary-accessible inline-flex items-center gap-1.5 underline decoration-transparent transition-colors hover:decoration-current"
-              href={WEBSITE_URL}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <span className="inline-flex items-center gap-1.5">
               <GlobeIcon className="size-3.5" />
               ioanamanea.net
-              <span className="sr-only"> (opens in a new tab)</span>
-            </a>
+            </span>
             {LINKS.map((link) => {
               const Icon = ICONS[link.icon as keyof typeof ICONS];
               return (
