@@ -1,0 +1,8 @@
+node_modules
+dist
+.output
+.vinxi
+.vite
+.tanstack
+*.local
+.DS_Store

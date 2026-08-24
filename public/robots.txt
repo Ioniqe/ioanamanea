@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ioanamanea.net/sitemap.xml
