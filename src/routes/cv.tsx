@@ -223,7 +223,7 @@ const Cv = () => (
 
 const CV_TITLE = `CV — ${PROFILE.name}`;
 const CV_DESCRIPTION = `The CV of ${PROFILE.name}, ${PROFILE.title} — experience, education, skills and personal projects.`;
-const CV_URL = `${WEBSITE_URL}/cv/`;
+const CV_URL = `${WEBSITE_URL}/cv`;
 
 export const Route = createFileRoute("/cv")({
   head: () => ({

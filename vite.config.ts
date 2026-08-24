@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     tanstackStart({
       prerender: {
+        autoSubfolderIndex: false,
         crawlLinks: true,
         enabled: true,
       },
