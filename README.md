@@ -1,35 +1,20 @@
-# ioanamanea
+# 👋 ioanamanea
 
-Personal site and CV — [ioanamanea.net](https://ioanamanea.net)
+My personal site and CV, live at [ioanamanea.net](https://ioanamanea.net) — building cool stuff, bit by bit 👾
 
-## Tech Stack
-
-- **Framework**: React with [TanStack Start](https://tanstack.com/start)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com)
-- **Build**: [Vite](https://vite.dev)
-- **Linting/formatting**: [Ultracite](https://ultracite.ai) (oxlint + oxfmt)
-- **Deployment**: Cloudflare Pages (static, prerendered)
-
-## Development
+## 🚀 Development
 
 ```bash
-# Install dependencies
-pnpm install
-
-# Start dev server
-pnpm dev
-
-# Build for production (prerenders / and /cv to static HTML)
-pnpm build
-
-# Preview the production build
-pnpm preview
+pnpm install   # install dependencies
+pnpm dev       # start dev server
+pnpm build     # build for production (prerenders / and /cv)
+pnpm preview   # preview the production build
 ```
 
-## Content
+## 📝 Content
 
-All page content (profile, experience, education, skills, projects) lives in `src/lib/data.ts` — a single source of truth for both the homepage and the CV.
+Everything — bio, experience, education, skills, projects — lives in one place: `src/lib/data.ts`. Update it once, and both the homepage and the CV pick it up.
 
-## CV
+## 📄 CV
 
-The `/cv` route renders the same data in a resume layout. "Download CV" uses the browser's print-to-PDF (`window.print()`); print-specific styles keep the layout compact and paginate cleanly.
+The `/cv` route mirrors the homepage's look and feel, styled to print cleanly. Hit "Download CV" and it uses the browser's print-to-PDF — no separate PDF template to keep in sync with the site. 🖨️
