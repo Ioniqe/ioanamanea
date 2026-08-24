@@ -3,7 +3,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { GithubIcon, LinkedinMonogramIcon } from "@/components/icons";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { ABOUT, LINKS, PROFILE, PROJECTS, SKILLS } from "@/lib/data";
+import {
+  ABOUT,
+  LINKS,
+  PROFILE,
+  PROJECTS,
+  SKILLS,
+  WEBSITE_URL,
+} from "@/lib/data";
 
 const ICONS = {
   github: GithubIcon,
@@ -133,5 +140,8 @@ const Home = () => {
 };
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [{ rel: "canonical", href: `${WEBSITE_URL}/` }],
+  }),
   component: Home,
 });

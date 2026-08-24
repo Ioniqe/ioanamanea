@@ -221,6 +221,22 @@ const Cv = () => (
   </>
 );
 
+const CV_TITLE = `CV — ${PROFILE.name}`;
+const CV_DESCRIPTION = `The CV of ${PROFILE.name}, ${PROFILE.title} — experience, education, skills and personal projects.`;
+const CV_URL = `${WEBSITE_URL}/cv/`;
+
 export const Route = createFileRoute("/cv")({
+  head: () => ({
+    meta: [
+      { title: CV_TITLE },
+      { name: "description", content: CV_DESCRIPTION },
+      { property: "og:title", content: CV_TITLE },
+      { property: "og:description", content: CV_DESCRIPTION },
+      { property: "og:url", content: CV_URL },
+      { name: "twitter:title", content: CV_TITLE },
+      { name: "twitter:description", content: CV_DESCRIPTION },
+    ],
+    links: [{ rel: "canonical", href: CV_URL }],
+  }),
   component: Cv,
 });
