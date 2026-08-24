@@ -1,5 +1,5 @@
 export const PROFILE = {
-  avatar: "/images/avatar.png",
+  avatar: "/images/avatar.jpg",
   location: "Romania",
   name: "Ioana Manea",
   title: "Full-Stack Engineer",

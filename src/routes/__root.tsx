@@ -6,6 +6,7 @@ import {
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
+import { NotFound } from "@/components/not-found";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { PROFILE, WEBSITE_URL } from "@/lib/data";
 
@@ -77,5 +78,6 @@ export const Route = createRootRoute({
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
     ],
   }),
+  notFoundComponent: NotFound,
   component: RootComponent,
 });
